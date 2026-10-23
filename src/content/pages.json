@@ -1,0 +1,42 @@
+{
+  "home": {
+    "slug": "index",
+    "path": "/",
+    "label": "Home",
+    "container_class": "page-wrapper",
+    "title": "DILO Creative Lab — Bandung's creative playground",
+    "description": "DILO Creative Lab brings designers, students and makers together in Bandung for talks, drinks, workshops and collaborations. Where ideas meet technology.",
+    "og_title": "DILO Creative Lab — Bandung's creative playground",
+    "og_image": "/assets/dilo-og.png"
+  },
+  "events": {
+    "slug": "evenements",
+    "path": "/evenements",
+    "label": "Events",
+    "container_class": "div-block-18",
+    "title": "Sessions in Bandung — DILO Creative Lab",
+    "description": "Creative Drinks, talks and open sessions from DILO Creative Lab in Bandung. Dates, speakers and updates are on Instagram.",
+    "og_title": "Sessions in Bandung — DILO Creative Lab",
+    "og_image": "/assets/dilo-og.png"
+  },
+  "about": {
+    "slug": "a-propos",
+    "path": "/a-propos",
+    "label": "About",
+    "container_class": "div-block-25",
+    "title": "About — DILO Creative Lab, Bandung",
+    "description": "A teaching factory and creative playground in Bandung. Meet the lab crew and see how DILO brings designers, students and makers together.",
+    "og_title": "About — DILO Creative Lab, Bandung",
+    "og_image": "/assets/dilo-og.png"
+  },
+  "contact": {
+    "slug": "contact",
+    "path": "/contact",
+    "label": "Contact",
+    "container_class": "div-block-21",
+    "title": "Contact — DILO Creative Lab",
+    "description": "A collaboration, a talk idea, a workshop? DM DILO Creative Lab on Instagram. WhatsApp and email are coming soon.",
+    "og_title": "Contact — DILO Creative Lab",
+    "og_image": "/assets/dilo-og.png"
+  }
+}

@@ -1,0 +1,440 @@
+/* --------------------------------------------------------------------------
+   Non-visual accessibility layer
+   The published stylesheet is kept intact; these additions only affect
+   keyboard focus, the skip link and the open mobile menu.
+   -------------------------------------------------------------------------- */
+
+html {
+  scroll-padding-top: 88px;
+}
+
+:where(a, button, [tabindex]):focus-visible {
+  outline: 2px solid var(--dilo-ink);
+  outline-offset: 2px;
+  box-shadow: 0 0 0 5px var(--dilo-lime);
+}
+
+#main-content:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.skip-link {
+  position: fixed;
+  z-index: 10050;
+  top: 12px;
+  left: 12px;
+  padding: 10px 14px;
+  transform: translateY(-160%);
+  border: 1px solid var(--dilo-ink);
+  background: var(--dilo-lime);
+  color: var(--dilo-ink);
+  font: 500 14px/1.2 "Khtekatrial", sans-serif;
+  text-decoration: none;
+  transition: transform 160ms ease;
+}
+
+.skip-link:focus {
+  transform: translateY(0);
+}
+
+.sr-only {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip: rect(0, 0, 0, 0) !important;
+  white-space: nowrap !important;
+  border: 0 !important;
+}
+
+html.nav-open,
+html.nav-open body {
+  overflow: hidden;
+}
+
+/* The closed menu is visually transformed away; inert removes it from the
+   keyboard order until the toggle opens it. */
+.twostep-nav__bottom[inert] {
+  pointer-events: none;
+}
+
+html.no-js [data-load-wrap],
+html.no-js [data-load-text] {
+  display: none !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .skip-link {
+    transition: none;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   DILO Creative Lab — brand tokens and palette previews
+   Palette A: DILO Black. Palette B: DILO Lime.
+   Only colour changes between the two palettes. Layout, type, imagery,
+   motion and breakpoints stay untouched.
+   -------------------------------------------------------------------------- */
+
+:root {
+  --dilo-blue: #000000;
+  --dilo-lime: #baff57;
+  --dilo-ink: #212121;
+  --dilo-paper: #ebedf5;
+  --dilo-white: #ffffff;
+  --dilo-on-blue: #ffffff;
+  --dilo-border: #21212126;
+
+  --brand-color-2: var(--dilo-blue);
+  --brand-color-1: var(--dilo-lime);
+  --content: var(--dilo-ink);
+  --background: var(--dilo-paper);
+  --background-accent: var(--dilo-white);
+  --content-white: var(--dilo-white);
+  --blue--content-white: var(--dilo-on-blue);
+  --blue--content: var(--dilo-on-blue);
+  --green--content-white: var(--dilo-on-blue);
+  --border: var(--dilo-border);
+  --_collection-1---blue: var(--dilo-blue);
+  --_collection-1---green: var(--dilo-lime);
+  --_collection-1---content: var(--dilo-ink);
+}
+
+[data-palette="lime"] {
+  --dilo-blue: #baff57;
+  --dilo-lime: #baff57;
+  --dilo-on-blue: #212121;
+}
+
+/* Hard-coded brand values in the published Webflow stylesheet. */
+.frame-1712,
+.frame-1713,
+.frame-1724,
+.dot-2,
+.dot-2.green,
+.badge-round-2,
+.badge-square-2 {
+  background-color: var(--dilo-lime);
+}
+
+.frame-1948754606,
+.frame-1723,
+.dot-2.blue,
+.badge-round-2.blue,
+.badge-square-2.blue {
+  background-color: var(--dilo-blue);
+}
+
+[data-transition-pixel] {
+  background: var(--dilo-blue);
+}
+
+[data-sticker="item"].is-blue {
+  --select-color: var(--dilo-blue);
+}
+
+[data-sticker="item"].is-green {
+  --select-color: var(--dilo-lime);
+}
+
+::selection {
+  background: var(--dilo-lime);
+  color: var(--dilo-ink);
+}
+
+.slot-progress-fill {
+  background-color: var(--dilo-lime);
+}
+
+.tc-page {
+  background-color: var(--dilo-blue);
+}
+
+.tc-kicker,
+.tc-title,
+.tc-cond {
+  color: var(--dilo-on-blue);
+}
+
+.tc-plus,
+.tc-card-value:hover,
+.tc-card-link:hover,
+.tc-sep {
+  color: var(--dilo-lime);
+}
+
+.tc-btn,
+.tc-bubble {
+  background-color: var(--dilo-lime);
+  color: var(--dilo-ink);
+}
+
+.tc-btn:hover,
+.tc-bubble:hover {
+  background-color: var(--dilo-on-blue);
+  color: var(--dilo-blue);
+}
+
+/* Text that sits on the structural brand surface. */
+.loader,
+.loader__text-el,
+.loader__logo-img,
+.text-block-3,
+.text-block-6.contact,
+.mwg005-paragraph,
+.about-text,
+.about-text-2,
+.preview-follower__label-span,
+.btn-bubble-arrow__content,
+.btn-bubble-arrow__content-text,
+.text.green.event,
+.text.blue,
+.text-107.blue,
+.text.l,
+.text.event.page-event,
+.footer-marquee .marquee-css-2,
+.r,
+.r-2,
+.text-100 {
+  color: var(--dilo-on-blue);
+}
+
+.btn-bubble-arrow__content.event .btn-bubble-arrow__content-text {
+  color: var(--dilo-ink);
+}
+
+/* The lime CTA on the lime contact surface needs an ink body in palette B. */
+[data-palette="lime"] .div-block-21 .btn-bubble-arrow__content.event {
+  background-color: var(--dilo-ink);
+}
+
+[data-palette="lime"] .div-block-21 .btn-bubble-arrow__content.event .btn-bubble-arrow__content-text {
+  color: var(--dilo-lime);
+}
+
+/* Decorative marks and separators that would disappear on lime. */
+[data-palette="lime"] .marquee-css__item-p-2.etoile {
+  color: var(--dilo-ink);
+}
+
+[data-palette="lime"] .loader__bg-bar {
+  background-color: var(--dilo-ink);
+}
+
+/* Wordmark */
+.dilo-symbol-sprite {
+  position: absolute;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.dilo-wordmark {
+  display: block;
+  width: auto;
+  height: 1em;
+  flex: none;
+  color: currentColor;
+  overflow: visible;
+}
+
+.dilo-nav-lockup {
+  display: flex;
+  align-items: center;
+  gap: 0.45em;
+  height: 100%;
+  color: var(--dilo-ink);
+  text-decoration: none;
+}
+
+.dilo-nav-lockup .dilo-wordmark {
+  height: 2.05em;
+}
+
+.dilo-nav-lockup__descriptor {
+  font-family: Khtekatrial, Arial, sans-serif;
+  font-size: 0.68em;
+  line-height: 1;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.twostep-nav__logo {
+  color: var(--dilo-ink);
+}
+
+.dilo-hero-lockup {
+  gap: 0.09em;
+  color: var(--dilo-ink);
+}
+
+.dilo-hero-lockup .dilo-wordmark {
+  height: 1.2em;
+}
+
+.dilo-hero-lockup__descriptor {
+  font-family: Khtekatrial, Arial, sans-serif;
+  font-size: 0.23em;
+  line-height: 0.92;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  text-align: left;
+  white-space: nowrap;
+}
+
+/* The original eye mark was a TDS brand graphic. The menu and hero keep
+   their existing containers and dimensions, but carry the DILO wordmark. */
+.dilo-menu-mark {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.8em;
+  width: 100%;
+  height: 100%;
+  color: var(--dilo-ink);
+}
+
+.dilo-menu-mark .dilo-wordmark {
+  width: 100%;
+  max-width: 220px;
+  height: auto;
+}
+
+.dilo-menu-mark__descriptor {
+  font-family: Khtekatrial, Arial, sans-serif;
+  font-size: 12px;
+  line-height: 1;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.eye-hero .dilo-hero-mark {
+  width: 220px;
+  max-width: 100%;
+  height: auto;
+  color: var(--dilo-ink);
+  align-self: flex-end;
+  margin-bottom: 12px;
+}
+
+.eye-hero-cropped:not(.bottom) .eye-hero .dilo-hero-mark {
+  align-self: flex-start;
+  margin-top: 14px;
+  margin-bottom: 0;
+}
+
+.marquee-star {
+  color: var(--dilo-blue);
+  font-family: Arial, sans-serif;
+  font-size: 80px;
+  line-height: 1;
+}
+
+.loader__logo-img {
+  color: var(--dilo-on-blue);
+}
+
+.loader__logo-img .dilo-wordmark {
+  width: auto;
+  height: 4.2em;
+  max-width: 100%;
+}
+
+/* Non-clickable social placeholders */
+.link-floating-menu.is--placeholder,
+.twostep-nav__link.is--placeholder {
+  cursor: default;
+}
+
+/* Preview-only palette switcher */
+.palette-switcher {
+  position: fixed;
+  z-index: 10060;
+  right: 16px;
+  bottom: 16px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 5px 5px 5px 12px;
+  border: 1px solid #ffffff2e;
+  border-radius: 999px;
+  background: var(--dilo-ink);
+  color: var(--dilo-paper);
+  font: 500 12px/1 "Khtekatrial", Arial, sans-serif;
+  box-shadow: 0 8px 24px #0000002e;
+}
+
+.palette-switcher__label {
+  margin-right: 2px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  opacity: 0.72;
+}
+
+.palette-switcher__button {
+  appearance: none;
+  border: 0;
+  border-radius: 999px;
+  padding: 8px 10px;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  cursor: pointer;
+}
+
+.palette-switcher__button[aria-pressed="true"] {
+  background: var(--dilo-lime);
+  color: var(--dilo-ink);
+}
+
+@media (max-width: 479px) {
+  .palette-switcher {
+    right: 10px;
+    bottom: 10px;
+    padding-left: 5px;
+  }
+
+  .palette-switcher__label {
+    display: none;
+  }
+}
+
+@media print {
+  .palette-switcher {
+    display: none;
+  }
+}
+
+/* Inline SVGs are authored with presentation attributes. CSS wins over those
+   attributes, so the same marks follow the selected palette. */
+[fill="#350AFF" i],
+[fill="#350aff" i] {
+  fill: var(--dilo-blue);
+}
+
+[fill="#BCF015" i],
+[fill="#bcf015" i] {
+  fill: var(--dilo-lime);
+}
+
+[fill="#1E1E1E" i],
+[fill="#212121" i] {
+  fill: var(--dilo-ink);
+}
+
+[stroke="#350AFF" i],
+[stroke="#350aff" i] {
+  stroke: var(--dilo-blue);
+}
+
+[stroke="#BCF015" i],
+[stroke="#bcf015" i] {
+  stroke: var(--dilo-lime);
+}
