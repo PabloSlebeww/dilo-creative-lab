@@ -85,7 +85,7 @@ const ogImage = new URL(data.og_image || "/assets/dilo-og.png", Astro.site ?? As
   <body data-barba="wrapper" data-crt="true" class="body">
     <svg class="dilo-symbol-sprite" aria-hidden="true" focusable="false">
       <symbol id="dilo-wordmark" viewBox="0 0 544 194">
-        <path d={diloWordmarkPath} fill="currentColor"></path>
+        <path d={diloWordmarkPath} fill="currentColor" fill-rule="evenodd"></path>
       </symbol>
     </svg>
     <a class="skip-link" href="#main-content">Skip to content</a>

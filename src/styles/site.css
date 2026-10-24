@@ -5047,9 +5047,10 @@ body {
 }
 
 .text-span {
-  background-image: url("/assets/69d0e33450dbc241b957b7fe_sticker-fire-blue.png");
+  background-image: url("/assets/dilo-icon-palette.svg");
   background-position: 50%;
   background-size: contain;
+  background-repeat: no-repeat;
   width: 1em;
   height: 1em;
   display: inline-block;
@@ -5057,8 +5058,9 @@ body {
 }
 
 .text-span._2 {
-  background-image: url("/assets/69d0e2dd1560ba8c7766c415_sticker-taco-green.png");
-  background-size: cover;
+  background-image: url("/assets/dilo-icon-camera.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
   width: 1em;
   height: 1em;
 }

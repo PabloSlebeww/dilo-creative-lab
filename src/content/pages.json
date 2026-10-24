@@ -4,9 +4,9 @@
     "path": "/",
     "label": "Home",
     "container_class": "page-wrapper",
-    "title": "DILO Creative Lab — Bandung's creative playground",
-    "description": "DILO Creative Lab brings designers, students and makers together in Bandung for talks, drinks, workshops and collaborations. Where ideas meet technology.",
-    "og_title": "DILO Creative Lab — Bandung's creative playground",
+    "title": "DILO Creative Lab — Teaching Factory, Bandung",
+    "description": "DILO Creative Lab is the Teaching Factory of Visual Communication Design at SMK Telkom Bandung—a creative hub where ideas meet technology.",
+    "og_title": "DILO Creative Lab — Teaching Factory, Bandung",
     "og_image": "/assets/dilo-og.png"
   },
   "events": {
@@ -14,9 +14,9 @@
     "path": "/evenements",
     "label": "Events",
     "container_class": "div-block-18",
-    "title": "Sessions in Bandung — DILO Creative Lab",
-    "description": "Creative Drinks, talks and open sessions from DILO Creative Lab in Bandung. Dates, speakers and updates are on Instagram.",
-    "og_title": "Sessions in Bandung — DILO Creative Lab",
+    "title": "Programmes — DILO Creative Lab",
+    "description": "Open studios, design clinics and project showcases from DILO Creative Lab, the teaching factory at SMK Telkom Bandung.",
+    "og_title": "Programmes — DILO Creative Lab",
     "og_image": "/assets/dilo-og.png"
   },
   "about": {
@@ -24,9 +24,9 @@
     "path": "/a-propos",
     "label": "About",
     "container_class": "div-block-25",
-    "title": "About — DILO Creative Lab, Bandung",
-    "description": "A teaching factory and creative playground in Bandung. Meet the lab crew and see how DILO brings designers, students and makers together.",
-    "og_title": "About — DILO Creative Lab, Bandung",
+    "title": "About — DILO Creative Lab, SMK Telkom Bandung",
+    "description": "A teaching factory for Visual Communication Design at SMK Telkom Bandung. Meet the lab and see how students learn through real client work.",
+    "og_title": "About — DILO Creative Lab, SMK Telkom Bandung",
     "og_image": "/assets/dilo-og.png"
   },
   "contact": {
@@ -35,7 +35,7 @@
     "label": "Contact",
     "container_class": "div-block-21",
     "title": "Contact — DILO Creative Lab",
-    "description": "A collaboration, a talk idea, a workshop? DM DILO Creative Lab on Instagram. WhatsApp and email are coming soon.",
+    "description": "Collaborate on a real client project, host a studio visit, or say hello. DM DILO Creative Lab on Instagram. WhatsApp and email are coming soon.",
     "og_title": "Contact — DILO Creative Lab",
     "og_image": "/assets/dilo-og.png"
   }

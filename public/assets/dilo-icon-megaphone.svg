@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1080" viewBox="0 0 36 36" shape-rendering="crispEdges" role="img" aria-label="Megaphone">
+<title>Megaphone</title>
+<path d="M4 15 H11 L25 7 V29 L11 21 H4 Z" fill="#212121"/>
+<path d="M6 17 H11 L23 10 V26 L11 19 H6 Z" fill="#BAFF57"/>
+<rect x="24" y="7" width="3" height="22" fill="#212121"/>
+<rect x="25" y="9" width="1" height="18" fill="#EBEDF5"/>
+<path d="M8 21 H14 V32 H8 Z" fill="#212121"/>
+<rect x="9" y="22" width="3" height="7" fill="#EBEDF5"/>
+<rect x="9" y="22" width="3" height="1" fill="#212121"/>
+<rect x="13" y="12" width="5" height="1" fill="#EBEDF5"/>
+<rect x="12" y="14" width="3" height="1" fill="#EBEDF5"/>
+<rect x="30" y="14" width="2" height="2" fill="#212121"/>
+<rect x="32" y="19" width="2" height="2" fill="#EBEDF5"/>
+<rect x="30" y="25" width="2" height="2" fill="#212121"/>
+<rect x="11" y="19" width="2" height="2" fill="#EBEDF5"/>
+</svg>

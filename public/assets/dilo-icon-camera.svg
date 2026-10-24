@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1080" viewBox="0 0 36 36" shape-rendering="crispEdges" role="img" aria-label="Camera">
+<title>Camera</title>
+<path d="M13 6 H23 V8 H25 V12 H11 V8 H13 Z" fill="#212121"/>
+<path d="M14 8 H22 V10 H23 V12 H13 V10 H14 Z" fill="#BAFF57"/>
+<path d="M5 12 H31 V14 H33 V30 H31 V32 H5 V30 H3 V14 H5 Z" fill="#212121"/>
+<path d="M6 14 H30 V16 H31 V29 H30 V30 H6 V29 H5 V16 H6 Z" fill="#BAFF57"/>
+<rect x="5" y="16" width="4" height="4" fill="#212121"/>
+<rect x="6" y="17" width="2" height="2" fill="#EBEDF5"/>
+<rect x="27" y="9" width="4" height="4" fill="#212121"/>
+<rect x="28" y="10" width="2" height="1" fill="#EBEDF5"/>
+<rect x="18" y="13" width="1" height="1" fill="#212121"/><rect x="14" y="14" width="9" height="1" fill="#212121"/><rect x="13" y="15" width="11" height="1" fill="#212121"/><rect x="12" y="16" width="13" height="1" fill="#212121"/><rect x="11" y="17" width="15" height="1" fill="#212121"/><rect x="10" y="18" width="17" height="1" fill="#212121"/><rect x="10" y="19" width="17" height="1" fill="#212121"/><rect x="10" y="20" width="17" height="1" fill="#212121"/><rect x="10" y="21" width="17" height="1" fill="#212121"/><rect x="9" y="22" width="19" height="1" fill="#212121"/><rect x="10" y="23" width="17" height="1" fill="#212121"/><rect x="10" y="24" width="17" height="1" fill="#212121"/><rect x="10" y="25" width="17" height="1" fill="#212121"/><rect x="10" y="26" width="17" height="1" fill="#212121"/><rect x="11" y="27" width="15" height="1" fill="#212121"/><rect x="12" y="28" width="13" height="1" fill="#212121"/><rect x="13" y="29" width="11" height="1" fill="#212121"/><rect x="14" y="30" width="9" height="1" fill="#212121"/><rect x="18" y="31" width="1" height="1" fill="#212121"/>
+<rect x="18" y="15" width="1" height="1" fill="#EBEDF5"/><rect x="15" y="16" width="7" height="1" fill="#EBEDF5"/><rect x="14" y="17" width="9" height="1" fill="#EBEDF5"/><rect x="13" y="18" width="11" height="1" fill="#EBEDF5"/><rect x="12" y="19" width="13" height="1" fill="#EBEDF5"/><rect x="12" y="20" width="13" height="1" fill="#EBEDF5"/><rect x="12" y="21" width="13" height="1" fill="#EBEDF5"/><rect x="11" y="22" width="15" height="1" fill="#EBEDF5"/><rect x="12" y="23" width="13" height="1" fill="#EBEDF5"/><rect x="12" y="24" width="13" height="1" fill="#EBEDF5"/><rect x="12" y="25" width="13" height="1" fill="#EBEDF5"/><rect x="13" y="26" width="11" height="1" fill="#EBEDF5"/><rect x="14" y="27" width="9" height="1" fill="#EBEDF5"/><rect x="15" y="28" width="7" height="1" fill="#EBEDF5"/><rect x="18" y="29" width="1" height="1" fill="#EBEDF5"/>
+<rect x="18" y="17" width="1" height="1" fill="#212121"/><rect x="15" y="18" width="7" height="1" fill="#212121"/><rect x="14" y="19" width="9" height="1" fill="#212121"/><rect x="14" y="20" width="9" height="1" fill="#212121"/><rect x="14" y="21" width="9" height="1" fill="#212121"/><rect x="13" y="22" width="11" height="1" fill="#212121"/><rect x="14" y="23" width="9" height="1" fill="#212121"/><rect x="14" y="24" width="9" height="1" fill="#212121"/><rect x="14" y="25" width="9" height="1" fill="#212121"/><rect x="15" y="26" width="7" height="1" fill="#212121"/><rect x="18" y="27" width="1" height="1" fill="#212121"/>
+<rect x="14" y="19" width="2" height="1" fill="#EBEDF5"/>
+<rect x="18" y="24" width="2" height="1" fill="#BAFF57"/>
+<rect x="5" y="27" width="3" height="1" fill="#EBEDF5"/>
+<rect x="28" y="28" width="2" height="1" fill="#EBEDF5"/>
+</svg>
