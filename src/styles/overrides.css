@@ -522,3 +522,128 @@ html.no-js [data-load-text] {
     display: inline;
   }
 }
+
+/* --------------------------------------------------------------------------
+   Home hero: inline design marks and photo
+   -------------------------------------------------------------------------- */
+
+/* The marks sit inside the headline as flex items, so they keep their
+   square/photo proportions at every viewport width. */
+.content-hero-container.is--dilo-hero .text-span {
+  flex: 0 0 auto;
+}
+
+/* Use a DILO workshop photo for the inline image instead of the inherited
+   auditorium crop. */
+.content-hero-container.is--dilo-hero .text-span._3 {
+  background-image: url("/assets/6a146ad376b195f4ce7a0965_DSC02318-2.png");
+}
+
+/* --------------------------------------------------------------------------
+   Pinned about section: white camera tile
+   -------------------------------------------------------------------------- */
+
+/* The camera mark gets the same 20vh square as the photo beside it, with a
+   white tile and a small inset so the mark reads like a sticker. */
+.image-about-container .slot-image-blue.is-camera {
+  background-color: var(--dilo-white);
+  border-radius: var(--radius--radius-s);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image-about-container .slot-image-blue.is-camera .img-about {
+  width: 82%;
+  height: 82%;
+  object-fit: contain;
+}
+
+/* --------------------------------------------------------------------------
+   Programme photo strip
+   -------------------------------------------------------------------------- */
+
+/* The section aligns children to the start, which made the photo strip
+   shrink to the width of the title + description. Stretch it to the section
+   so the strip and the description reach the right content edge. */
+.section-6 .event-pin-height {
+  align-self: stretch;
+  width: 100%;
+}
+
+/* --------------------------------------------------------------------------
+   Badge colour system
+   Square = lime with ink text. Round = ink with lime text.
+   Fixed brand values keep the two shapes distinct in both palettes.
+   -------------------------------------------------------------------------- */
+
+.badge-square,
+.badge-square.green,
+.badge-square.green.event,
+.badge-square.blue,
+.badge-square-2,
+.badge-square-2.green,
+.badge-square-2.blue {
+  background-color: var(--dilo-lime);
+  color: var(--dilo-ink);
+}
+
+.badge-square .text,
+.badge-square .text.green,
+.badge-square .text.green.l,
+.badge-square .text.green.event,
+.badge-square .text.event,
+.badge-square .text.event.page-event,
+.badge-square .text.blue,
+.badge-square .text.l,
+.badge-square-2 .text-107,
+.badge-square-2 .text-107.green,
+.badge-square-2 .text-107.blue {
+  color: var(--dilo-ink);
+}
+
+.badge-round,
+.badge-round.green,
+.badge-round.green.l,
+.badge-round.green.event,
+.badge-round.green.event.page-event,
+.badge-round.blue,
+.badge-round-2,
+.badge-round-2.green,
+.badge-round-2.blue {
+  background-color: var(--dilo-ink);
+  color: var(--dilo-lime);
+}
+
+.badge-round .text,
+.badge-round .text.green,
+.badge-round .text.green.l,
+.badge-round .text.green.event,
+.badge-round .text.event,
+.badge-round .text.event.page-event,
+.badge-round .text.blue,
+.badge-round .text.l,
+.badge-round-2 .text-107,
+.badge-round-2 .text-107.green,
+.badge-round-2 .text-107.blue {
+  color: var(--dilo-lime);
+}
+
+/* Home programme CTA: the rectangular body follows the square badge, the
+   circular arrow follows the round badge. The events and contact CTAs sit on
+   black or lime surfaces, so they keep their existing surface-specific
+   treatment. */
+.section-6 .btn-bubble-arrow__content {
+  background-color: var(--dilo-lime);
+  color: var(--dilo-ink);
+}
+
+.section-6 .btn-bubble-arrow__content-text {
+  color: var(--dilo-ink);
+}
+
+.section-6 .btn-bubble-arrow__arrow,
+.section-6 .btn-bubble-arrow__arrow.is--duplicate {
+  background-color: var(--dilo-ink);
+  color: var(--dilo-lime);
+}
