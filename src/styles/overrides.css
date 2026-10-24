@@ -477,3 +477,48 @@ html.no-js [data-load-text] {
   height: 100%;
   object-fit: contain;
 }
+
+/* Home hero: the DILO statement runs to three lines. The inherited headline
+   was two short words per line, so size this one from the viewport to keep all
+   three lines intact without clipping at tablet or mobile widths. */
+.content-hero-container.is--dilo-hero .image-trail-title {
+  font-size: clamp(1.3em, 6.2vw, 5.7em);
+}
+
+.content-hero-container.is--dilo-hero .image-trail-title a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.content-hero-container.is--dilo-hero .image-trail-title a:hover,
+.content-hero-container.is--dilo-hero .image-trail-title a:focus-visible {
+  text-decoration: underline;
+  text-decoration-thickness: max(2px, 0.04em);
+  text-underline-offset: max(4px, 0.08em);
+}
+
+.content-hero-container.is--dilo-hero .image-trail-title a:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 0.08em;
+}
+
+.hero-caption.hero-caption--disciplines {
+  font-size: clamp(10px, 3.2vw, 13px);
+}
+
+.hero-caption__break {
+  display: none;
+}
+
+@media (max-width: 560px) {
+  .hero-caption.hero-caption--disciplines {
+    white-space: normal;
+    overflow: visible;
+    line-height: 1.3;
+    text-align: left;
+  }
+
+  .hero-caption__break {
+    display: inline;
+  }
+}
